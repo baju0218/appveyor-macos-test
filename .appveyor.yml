@@ -16,13 +16,13 @@ environment:
 install:
   - brew install tree
   
- configuration:
+configuration:
   - Release
   - Debug
   
- before_build:
+before_build:
   - env
   
-  build_script:
+build_script:
   - tree -L 3 ${pwd}
   
